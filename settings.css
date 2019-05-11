@@ -1,0 +1,94 @@
+SETTINGS
+
+
+
+[** ▼ 外部リンクマーク] [https://io-lab.slack.com/archives/CE7B5U73J/p1547050325002500]
+code:style.css
+ .line a.link:not(.icon)::before { font-family:'FontAwesome'; content: '\f08e  '; display: inline-block }
+
+
+
+[** ▼ 画像を小さく] [/li9ri9/ページ内の画像を小さくする]
+code:style.css
+ span.deco strong.level-1 span.modal-image a img.image{
+     height: 5em;
+ }
+
+
+
+[** ▼ 強調マーカ] [/help-jp/文字装飾記法], [/scrasobox/マーカー] [*! hoge]  [[hoge]]
+code:style.css
+  .deco-\! {
+    color: #000; /* 黒文字 */
+    background-color: #ffff99; /* 黄背景 */
+    padding: 0.1em 0.2em 0.1em 0.2em;
+  }
+  .level-1 .deco-\! {
+    color: #fff; /* 白文字 */
+    background-color: #ff5470; /* 赤背景 */
+    padding: 0.1em 0.2em 0.1em 0.2em;
+  }
+  
+  /* 二重括弧は小見出しにしたい */
+  .line strong:not([class]) { 
+     background-color: #DCEDF7;
+     padding: 0.2em 0.5em;
+  }
+
+
+
+[** ▼ 見出し] https://www.nxworld.net/tips/50-css-heading-styling.html  [**# hoge]
+code:style.css
+  .level-1 .deco-\# {
+      width: 100%;
+      margin: 0.25em 0;
+      padding: .25em 0 .25em .75em;
+      border-left: 5px solid #d9d9d9;
+  }
+  .level-2 .deco-\# {
+    width: 100%;
+    margin: 0.25em 0;
+    padding: .25em 0 .25em .75em;
+    border-left: 6px solid #ceeafc;
+  }
+  .level-3 .deco-\# {
+    width: 100%;
+    margin: 0.25em 0;
+    padding: .25em 0 .25em .75em;
+    border-left: 7px solid #87cefa;
+  }
+  .level-4 .deco-\# {
+    width: 100%;
+    margin: 0.25em 0;
+    padding: .25em 0 .25em .75em;
+    border-left: 8px solid #22a4f5;
+  }
+  .level-5 .deco-\# {
+    width: 100%;
+    margin: 0.25em 0;
+    padding: .25em 0 .25em .75em;
+    border-left: 9px solid #097bc2;
+  }
+  
+
+
+[** ▼アイコンを円でくり抜く] [/Porin-Room/settings#5b5dfa5c1a4b8a000043e12c]
+code:style.css
+ .icon {
+ 	border-radius: 50%;
+ }
+
+
+
+[** ▼チェックボックス] [/scrasobox/チェックボックスになるタグ 2]
+code:style.css
+  .line:not(.cursor-line) a[href='./_']:not(.icon) span,
+  .line:not(.cursor-line) a[href='./x']:not(.icon) span {
+    display: inline-block; width: 0; text-indent: -9999px }
+  .line:not(.cursor-line) a[href='./_']:not(.icon)::after,
+  .line:not(.cursor-line) a[href='./x']:not(.icon)::after {
+    display: inline-block; min-width: 1.15em; padding-left: 1px;
+    font-family: FontAwesome; font-size: 120%; text-align: center; vertical-align: middle }
+  .line:not(.cursor-line) a[href='./_']:not(.icon)::after { content: '\f096'; color: #a9a9a9 }
+  .line:not(.cursor-line) a[href='./x']:not(.icon)::after { content: '\f046'; color: #57bf8b }
+
