@@ -30,7 +30,7 @@ code:style.css
   
   /* 二重括弧は小見出しにしたい: [[hoge]] */
   .line strong:not([class]) { 
-     background-color: #DCEDF7;
+     background-color: #dcedf7;
      padding: 0.2em 0.5em;
   }
 
