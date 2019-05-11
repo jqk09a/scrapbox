@@ -1,14 +1,13 @@
 SETTINGS
 
 
-
-[** ▼ 外部リンクマーク] [https://io-lab.slack.com/archives/CE7B5U73J/p1547050325002500]
+[** ▼ 外部リンクマーク] 
 code:style.css
  .line a.link:not(.icon)::before { font-family:'FontAwesome'; content: '\f08e  '; display: inline-block }
 
 
 
-[** ▼ 画像を小さく] [/li9ri9/ページ内の画像を小さくする]
+[** ▼ 画像を小さく]
 code:style.css
  span.deco strong.level-1 span.modal-image a img.image{
      height: 5em;
@@ -16,13 +15,16 @@ code:style.css
 
 
 
-[** ▼ 強調マーカ] [/help-jp/文字装飾記法], [/scrasobox/マーカー] [*! hoge]  [[hoge]]
+[** ▼ 強調マーカ・小見出し]
 code:style.css
+  /* 強調 lv.0 */
   .deco-\! {
     color: #000; /* 黒文字 */
     background-color: #ffff99; /* 黄背景 */
     padding: 0.1em 0.2em 0.1em 0.2em;
   }
+
+  /* 強調 lv.1 */
   .level-1 .deco-\! {
     color: #fff; /* 白文字 */
     background-color: #ff5470; /* 赤背景 */
@@ -37,7 +39,7 @@ code:style.css
 
 
 
-[** ▼ 見出し] https://www.nxworld.net/tips/50-css-heading-styling.html  [**# hoge]
+[** ▼ 見出し]
 code:style.css
   .level-1 .deco-\# {
       width: 100%;
@@ -72,7 +74,7 @@ code:style.css
   
 
 
-[** ▼アイコンを円でくり抜く] [/Porin-Room/settings#5b5dfa5c1a4b8a000043e12c]
+[** ▼アイコンを円でくり抜く]
 code:style.css
  .icon {
  	border-radius: 50%;
