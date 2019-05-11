@@ -7,7 +7,7 @@ code:style.css
 
 
 
-[** ▼ 画像を小さく]
+[** ▼ 画像を小さく表示]  [* [image]]
 code:style.css
  span.deco strong.level-1 span.modal-image a img.image{
      height: 5em;
@@ -15,23 +15,20 @@ code:style.css
 
 
 
-[** ▼ 強調マーカ・小見出し]
+[** ▼ 強調マーカ・小見出し]  [! hoge] [*! hoge] [[hoge]]
 code:style.css
-  /* 強調 lv.0 */
   .deco-\! {
     color: #000; /* 黒文字 */
     background-color: #ffff99; /* 黄背景 */
     padding: 0.1em 0.2em 0.1em 0.2em;
   }
-
-  /* 強調 lv.1 */
   .level-1 .deco-\! {
     color: #fff; /* 白文字 */
     background-color: #ff5470; /* 赤背景 */
     padding: 0.1em 0.2em 0.1em 0.2em;
   }
   
-  /* 二重括弧は小見出しにしたい */
+  /* 二重括弧は小見出しにしたい: [[hoge]] */
   .line strong:not([class]) { 
      background-color: #DCEDF7;
      padding: 0.2em 0.5em;
@@ -39,7 +36,7 @@ code:style.css
 
 
 
-[** ▼ 見出し]
+[** ▼ 見出し]  [*# hoge] [**# hoge] ... 
 code:style.css
   .level-1 .deco-\# {
       width: 100%;
@@ -74,7 +71,7 @@ code:style.css
   
 
 
-[** ▼アイコンを円でくり抜く]
+[** ▼アイコンを円でくり抜く]  [hoge.icon]
 code:style.css
  .icon {
  	border-radius: 50%;
@@ -82,7 +79,7 @@ code:style.css
 
 
 
-[** ▼チェックボックス] [/scrasobox/チェックボックスになるタグ 2]
+[** ▼チェックボックス]  [_] [x]
 code:style.css
   .line:not(.cursor-line) a[href='./_']:not(.icon) span,
   .line:not(.cursor-line) a[href='./x']:not(.icon) span {
